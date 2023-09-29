@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Web Application</title>
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" 
+        integrity="sha384-MI32KR77SgI9QAPUs+6R7leEOwtop70UsjEtFEezfKnMjXWx15NENsZpfDgq8m8S"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script> 
+</head> 
+
+  
+<body onload="time()">
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date</p>
+            <p id="hour">Hour</p>
+        </div>
+
+      
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+
+      
+        <form action="" id="todo-form">
+            <p>Enter Your Plan Here</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Type here about your plan">
+                <button type="submit">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+      
+        <form action="" id="edit-form" class="hide">
+            <p>Edit Your Plan Here</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Type here to edit">
+                <button type= "submit">
+                    <i class="fa fa-pencil"></i>
+                </button>
+            </div>
+            <button type="button" id="cancel-edit-btn">Cancel</button>
+        </form>
+
+      
+        <div class="todo-list" id="todo-list">
+        <div class="todo">
+                 <h3>Your Plans</h3>
+                      <button class="finish-todo">
+                         <i class="fa fa-check"></i>
+                      </button>
+                      <button class="edit-todo">
+                         <i class="fa fa-pencil"></i>
+                      </button>
+                      <button class="remove-todo">
+                         <i class="fa fa-times"></i>
+                      </button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+        
